@@ -9,6 +9,7 @@ namespace Ejercicio1String.Controladores
             string nombre;
             string apellido1;
             string apellido2;
+            string dniCompleto;
             OperativaInterfaz oi = new OperativaImplementacion();
 
             nombre = oi.pedirNombreOApe(0);
@@ -23,6 +24,8 @@ namespace Ejercicio1String.Controladores
                 apellido1 = oi.pedirNombreOApe(1);
                 apellido2 = oi.pedirNombreOApe(2);
             }
+
+            dniCompleto = oi.pedirDniYVal();
         }
     }
 }
